@@ -1,0 +1,169 @@
+<div class="bkg-detail">
+    <mat-toolbar>User Details</mat-toolbar>
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Professional Details</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src="assets/images/ap.jpg" alt="Photo of a Shiba Inu">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Name
+
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>{{data.name}}</strong>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            Email
+
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>{{data.email}}</strong>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Phone
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>{{data.phone}}</strong>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Website
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="{{data.website}}" target="_blank">{{data.website}}</a>
+
+                        </div>
+                    </div>
+                    <button mat-icon-button matTooltip="User Post" aria-label="Example icon-button with a heart icon"
+                        matTooltipPosition="after" 
+                         [routerLink]="['post']">
+                        
+                        <mat-icon>forum</mat-icon>
+                    </button>
+
+
+
+                </mat-card>
+
+
+            </div>
+            <div class="col-sm-8">
+
+                <mat-card class="example-card ">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>ABOUT ME</mat-card-title>
+
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod eu velit eu rhoncus.
+                            Morbi ac quam non lorem efficitur aliquet in vitae eros. Maecenas semper cursus velit sit
+                            amet
+                            tempus. Nulla sapien nulla, lobortis at eros a, ullamcorper commodo nibh. Praesent iaculis
+                            quis
+                            ante sit amet ultricies. Integer faucibus metus non nunc dapibus fringilla. Morbi mollis
+                            feugiat
+                            ipsum, vel ultrices lacus aliquam et. Maecenas sit amet commodo urna.</p>
+
+                    </mat-card-content>
+
+
+
+
+
+                </mat-card>
+                <mat-card class="example-card mar-top">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Address</mat-card-title>
+
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                Suite:
+
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>{{data.address.suite}}</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                Zipcode:
+
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>{{data.address.zipcode}}</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                Street:
+
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>{{data.address.street}}</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                City:
+
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>{{data.address.city}}</strong>
+                            </div>
+                        </div>
+
+
+
+                    </mat-card-content>
+
+
+
+
+
+                </mat-card>
+                <mat-card class="example-card mar-top">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Company</mat-card-title>
+
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        Company Name:{{data.company.name}}
+
+                    </mat-card-content>
+                    <p style="font-weight:bold">I AM WEB DESIGNER</p>
+
+
+
+
+                </mat-card>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

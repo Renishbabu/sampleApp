@@ -1,0 +1,18 @@
+.example-card {
+    max-width: 800px;
+    margin-top: 4%;
+    margin-left: -18%;
+  }
+  
+  
+  .example-header-image {
+    background-image: url('src/assets/images/bkg.jpg');
+    background-size: cover;
+  }
+  .bkg-detail{
+    /* background-image: url("src\assets\images\bkg.jpg"); */
+    background-color: #ddcaaf;
+
+}
+   
+  

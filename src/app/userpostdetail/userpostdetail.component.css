@@ -1,0 +1,8 @@
+.bkg-detail-post{
+    /* background-image: url("src\assets\images\bkg.jpg"); */
+    background-color: #ddcaaf;
+
+}
+.example-card mat-card{
+    margin-top: 20%;
+}

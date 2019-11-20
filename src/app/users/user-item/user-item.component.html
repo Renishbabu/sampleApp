@@ -1,0 +1,32 @@
+<div class="row" style="background-color: lightpink;">
+    <div class="col-sm-4">
+        <div>
+            <img src="assets/images/dad.jpeg" width="200" height="100" />
+        </div>
+    </div>
+    <div class="col-sm-8">
+
+
+
+
+
+        <a [routerLink]="['/user',userData.id,'post']">POST</a><br>
+        <a [routerLink]="['/user',userData.id]">ID:{{userData.id}}
+        </a><br>
+
+
+        <a [routerLink]>UserName : {{ userData.name}}
+        </a><br>
+        Address : <br>
+        Street: {{ userData.address.street }} <br>
+        City: {{userData.address.city}}<br>
+        Suite: {{userData.address.suite}}<br>
+        zipcode: {{userData.address.zipcode}}<br>
+        <br>
+        Phone:{{userData.phone}}
+        <br>
+        Website:{{userData.website}}
+        <br>
+        Company:{{userData.company.name}}
+    </div>
+</div>
